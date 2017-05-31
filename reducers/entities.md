@@ -5,7 +5,7 @@ entities e.g. in the local stoage for offline usage.
 
 In other parts of your application you can access the entities by selectors.
 
-## Structure
+## Example structure
 ```json5
 {
     "entities": {
