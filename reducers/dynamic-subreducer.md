@@ -56,7 +56,7 @@ const article = (state = initialArticleState, action) {
 const articles = (state = {}, action) => {
     const payload = action.payload;
     
-    if (typeof payload.articleId !== 'number') {
+    if (!payload || typeof payload.articleId !== 'number') {
         return state;
     }
     
