@@ -38,14 +38,14 @@ const article = (state = initialArticleState, action) {
             return {
                 ...state,
                 fetchStatus: 'loaded',
-                lastFetched: Date.now()
+                lastFetched: action.receivedAt
             };
         
         case: FETCH_ARTICLE.FAILURE:
             return {
                 ...state,
                 fetchStatus: 'failed',
-                lastFetched: Date.now()
+                lastFetched: action.receivedAt
             };
     
         default:
