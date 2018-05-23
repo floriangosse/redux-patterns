@@ -1,7 +1,7 @@
 # Reset Reducer
 
-A reset reducer is a command pattern to conditionaly reset a reducers state. One solution is to implement it
-directly in the the affected reducer. Here is an example:
+A reset reducer is a command pattern to conditionaly reset a reducer's state. One solution is to implement it
+directly in the affected reducer. Here is an example:
 
 ```js
 function reducer (state = initialState, action) {
@@ -17,8 +17,8 @@ function reducer (state = initialState, action) {
 
 ## Higher-order function
 
-A more flexible solution is a higher-order function which takes the reducer, which should be resetted, and the 
-condition function as arguments. An possible implementation could look like this:
+A more flexible solution is a higher-order function which takes the reducer that should be reset and the 
+condition function as arguments. A possible implementation could look like this:
 
 ```js
 function resetify (condition) {
