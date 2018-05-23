@@ -1,6 +1,6 @@
 # Reset Reducer
 
-A reset reducer is a command pattern to conditionaly reset a reducer's state. One solution is to implement it
+A reset reducer is a command pattern to conditionally reset a reducer's state. One solution is to implement it
 directly in the affected reducer. Here is an example:
 
 ```js
